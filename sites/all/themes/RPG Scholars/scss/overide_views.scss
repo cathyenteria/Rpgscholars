@@ -1,0 +1,56 @@
+
+.sf-menu a, .sf-menu a:active, .sf-menu a:visited, .sf-menu a:focus {
+    color: #002337;
+    background: #B2BEB5;
+    height: 45px;
+    width: 100%;
+    border-radius: 0, 5px, 0, 5px; 
+    border: 1px outset #003973;
+    padding: 0.75em 1em;
+    position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*.sf-menu li.last a {
+  /* last item of the root menu */
+ /* border-right: none;
+  padding: 5px;
+
+
+}*/
+//*.sf-menu li.last ul li a,
+.sf-menu li ul li a
+//.sf-menu li ul li.last a 
+{
+  /* all other child menu items */
+  border-style: solid;
+  border-width: 1px; }
+
+  /* border-color is set by colors.css */
+
+.sf-menu li.menuparent a {
+  /* item with child menu - adding some spaces for arrows */
+  padding: 0;
+}
+.sf-menu li a.sfHover,
+.sf-menu li a:hover {
+  background-color: #A1A8A6;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+  top: 3.2em;
+  border-top: none;}
+.sf-sub-indicator {
+  background: url('../images/sf-arrows.png') no-repeat -10px -110px;
+}
+a > .sf-sub-indicator {
+  top: .8em; /* .2em drop in arrows */
+}
+.sf-menu ul {
+ 
+  border-width: 1px;
+  border-style: solid;
+ /* border-color: #e3ddb0;  add border around the child menu block */
+  margin-top: 10px;
+}

@@ -1,0 +1,39 @@
+<?php
+
+
+
+/**
+ * Implements hook_menu().
+*/
+
+function students_profile_menu() {
+  $items['students'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('user_register_form'),
+    'access callback' => 'students_profile_permission',
+'access arguments' => array ('administer students profile'),
+    'type' => MENU_LOCAL_TASK,
+  );
+return $items;
+} 
+
+/**
+ * Implements hook_permission().
+ */
+
+function students_profile_permission() {
+
+return array(
+	'administer students profile' => array (
+	'title' => t('Administer students profile'),
+	'description' => t('Approve and deny students profile'),	
+),
+);
+
+}
+
+function students_profile_change_form_alter(&$form, $form_state, $form_id) {
+    if ($form_id == 'user_register_form') {
+       hide($form['account']['status']);
+    }
+}

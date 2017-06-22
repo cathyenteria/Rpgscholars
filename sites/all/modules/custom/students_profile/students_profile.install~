@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * @file
+ * Install file for the Students Profile one page.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function students_profile_schema() {
+  $schema['students'] = array(
+    'description' => 'Stores students profile items.',
+    'fields' => array(
+      'sid' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique students profile item ID.',
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => FALSE,
+        'default' => NULL,
+        'description' => "The {users}.uid of the associated user.",
+      ),
+	'name' => array(
+        'type' => 'varchar',
+        'length' => 60,
+        'not null' => TRUE,
+        'default' => ''
+      ),
+      'label' => array(
+        'description' => 'A human-readable label for this profile.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'created' => array(
+        'description' => 'The Unix timestamp when the profile was created.',
+        'type' => 'int',
+        'not null' => FALSE,
+      ),
+      'changed' => array(
+        'description' => 'The Unix timestamp when the profile was most recently saved.',
+        'type' => 'int',
+        'not null' => FALSE,
+      ),
+    ),
+    'indexes' => array(
+      'uid' => array('uid'),
+    ),
+    'foreign keys' => array(
+      'uid' => array(
+        'table' => 'users',
+        'columns' => array('uid' => 'uid'),
+      ),
+
+    ),
+    'primary key' => array('sid'),
+  );
+
+  return $schema;
+}
+
+
+/**
+ * Add a label column to profiles.
+
+function profile2_update_7101() {
+  db_add_field('students', 'label', array(
+    'description' => 'A human-readable label for this profile.',
+    'type' => 'varchar',
+    'length' => 255,
+    'not null' => TRUE,
+    'default' => '',
+  ));
+
+}
+ */
+

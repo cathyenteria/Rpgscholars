@@ -1,5 +1,5 @@
-name = 'THEMETITLE'
-description = Uses the Bootstrap Framework Sass source files and must be compiled (not for beginners).
+name = 'RPG Scholar'
+description = This is the default theme for RPG Scholar.
 core = 7.x
 base theme = bootstrap
 
@@ -25,12 +25,13 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-
+stylesheets[all][] = css/overide_views.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
+scripts[] = 'bootstrap/assets/stylesheets/bootstrap;
 scripts[] = 'bootstrap/assets/javascripts/bootstrap/affix.js'
 scripts[] = 'bootstrap/assets/javascripts/bootstrap/alert.js'
 scripts[] = 'bootstrap/assets/javascripts/bootstrap/button.js'
@@ -44,5 +45,5 @@ scripts[] = 'bootstrap/assets/javascripts/bootstrap/scrollspy.js'
 scripts[] = 'bootstrap/assets/javascripts/bootstrap/tab.js'
 scripts[] = 'bootstrap/assets/javascripts/bootstrap/transition.js'
 
-; Disable the CDN provider so compiled source files can be used.
+;; Disable the CDN provider so compiled source files can be used.
 settings[bootstrap_cdn] = ''
