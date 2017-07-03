@@ -1,13 +1,8 @@
 /* line 2, ../scss/overide_views.scss */
 .sf-menu a, .sf-menu a:active, .sf-menu a:visited, .sf-menu a:focus {
   color: #002337;
-  background: #B2BEB5;
   height: 45px;
   width: 100%;
-  border-radius: 0, 5px, 0, 5px;
-  border: 1px outset #003973;
-  padding: 0.75em 1em;
-  position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -18,9 +13,8 @@
  /* border-right: none;
   padding: 5px;
 
-
 }*/
-/* line 23, ../scss/overide_views.scss */
+/* line 17, ../scss/overide_views.scss */
 .sf-menu li ul li a
  {
   /* all other child menu items */
@@ -29,37 +23,37 @@
 }
 
 /* border-color is set by colors.css */
-/* line 32, ../scss/overide_views.scss */
+/* line 26, ../scss/overide_views.scss */
 .sf-menu li.menuparent a {
   /* item with child menu - adding some spaces for arrows */
   padding: 0;
 }
 
-/* line 36, ../scss/overide_views.scss */
+/* line 30, ../scss/overide_views.scss */
 .sf-menu li a.sfHover,
 .sf-menu li a:hover {
   background-color: #A1A8A6;
 }
 
-/* line 40, ../scss/overide_views.scss */
+/* line 34, ../scss/overide_views.scss */
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
   top: 3.2em;
   border-top: none;
 }
 
-/* line 44, ../scss/overide_views.scss */
+/* line 38, ../scss/overide_views.scss */
 .sf-sub-indicator {
   background: url("../images/sf-arrows.png") no-repeat -10px -110px;
 }
 
-/* line 47, ../scss/overide_views.scss */
+/* line 41, ../scss/overide_views.scss */
 a > .sf-sub-indicator {
   top: .8em;
   /* .2em drop in arrows */
 }
 
-/* line 50, ../scss/overide_views.scss */
+/* line 44, ../scss/overide_views.scss */
 .sf-menu ul {
   border-width: 1px;
   border-style: solid;

@@ -7,6 +7,19 @@
 @import 'overrides';
 @import '../bootstrap/assets/stylesheets/bootstrap/mixins';
 @import 'compass';
+@import 'others/minipanels';
+
+/*
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/style-settings";
+@import "partials/admin-layout-settings";
+@import "partials/mobile-first";
+@import "partials/responsive-media";
+*/
 
 /*.nav-wrap,
 .slideshow,
@@ -19,7 +32,7 @@
 }
 $red: #FF0000;
 $white: #FFFFFF;
-$gray: #808080;
+$gray: #808080;  
 $blue-gray: #6699CC;
 $main-green: #00647D;
 $alice-blue: #F0F8FF;
@@ -55,8 +68,8 @@ $lightgray: #E3E6EB;
 }
 .body-wrap{
     background: $lightgray;
-} 
-*/
+} */
+
 $red: #FF0000;
 $white: #FFFFFF;
 $gray: #808080;
@@ -74,50 +87,99 @@ $cyan: #00D5F5;
 $lightcolor:#AAE7FC;
 $mylight: #00CCFF;
 $nav: #0A9BDE;
+$dev: #D6EBFF;
+$light: #00CEF4;
+/**/
+
+
+//header
+/*
+#header{
+    border: 3px solid $mylight;
+    border-radius: 0px 99px 0px 90px ;
+}
 
 #highlighted{
-    background: $nav;
-    height: 50px;
+    background: none;
+    height: 48px;
     width: 100%;
 }
-#navigation{
-    background: black;
-    height: 100px;
-}
 
+.navbar{
+    border-radius: 0px 70px 0px 96px ;
+    border-bottom: none;
+    background:lightblue;
+    height: 30px;
+ 
+    
+}*/   /*
 #header,
 #footer{
 background: $corel;
+height: 180px;
 
 }
 
-
-.page-cont{
-    background: blue;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.header-wrap,
 .nav-wrap,
 .footer-wrap,
 .content-wrap{
-background: red;
+    background: $light;
     width:100%;
     clear:both;
-    float: left;
 
 }
-#slide,
-.slide-display,
-.news-pager,
-.content-fluid{
-    padding: 20px;
+
+.main-content,
+.page-cont{
+    float: center;
+    margin:50px;
+    background: gray;
+}
+
+.nav-wrap,
+.footer-wrap,
+.content-wrap{
+    background: $light;
+    width:100%;
+    clear:both;
+
+}
+
+.slide,
+.slide-column{
     width: 100%;
 }
 
-#main-content{
-    margin: 50px;
+   
+#slide-show{
+    background: orange;
+    padding: 1em;
+    float: left;
+    margin-top: 3px;
+    margin-right: 2px;
 }
+.body-section{
+    background: white;
+    padding: 1em;
+
+    margin: 10px 2px 5px 2px;
+}
+
+.slide,
+.slide-column{
+    padding-left: 2em;
+    background: red;
+    width: 100%;
+    margin: 0 auto;
+    }
+    .slide-show{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+    }
+
+
 .footer-cont,
 #site-name,{
   padding: 17px 0 0 10px;
@@ -126,14 +188,123 @@ background: red;
   margin-left: 155px;
   margin-top: 25px;
 }
+.header-wrap{
+    background: $mylight;
+    border-radius: 0px;
+    border-radius: 0px 1px 0px 90px ;
+}
 
-#header{
-    border: 3px  solid $mylight;
-    border-radius: 0px 90px 0px 90px ;
-    height: 158px;
-    border-top:none;
+#page{
+    padding: 5px;
+
+}
+.users-menu{
+    float: right;
+    
+
+}
+.menu-main{
+    padding: 3px;
+    margin: 5px;
+}
+
+
+
+// change later!
+.col-12 {
+    width: 100%;
+    box-sizing: border-box;
+   
+
+} */
+/*.row{
+    float: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-row{
+    background: yellow;
+    margin: 0 auto;
+}
+.left-region,
+.center-region,
+.right-region{
+    background: green;
+    display:block;
+
     
 }
-.header-wrap{
-    background: $mylight; 
+.bottom-row{
+    width: 100%;
+}
+
+.program-region{ 
+    width: 100%;
+    background: red;
+}
+.bottom-right,
+.bottom-left,
+.program-region,
+.bottom-center{
+    width: 100%;
+    background: $corel;
+}
+
+//do not delete
+.container{
+    width: 99.95%;
+}
+.body-section{
+    width:100%;
+    clear:both;
+        background: white;
+
+
+}
+.programpage{
+    background: black;
+    width: 100%;
+    margin: 15px;
+    padding: 5em;
+}
+.homepage{
+    background: orange;
+    margin-right:1px;
+    width: 100%;
+}
+.page-cont{ 
+    width: 98%;
+    background: gray;
+}
+.slide-show{
+    width: 99.98%;
+}
+.row-programs{
+    background: orange;
+}
+#program-row{
+    margin: 5px 5px 5px 5px;
+    background: orange;
+    width: 90%;
+}
+.program-container,
+.class-news{
+    background: black;
+    padding: 3em;
+}
+class-news{
+    width: 78%;
+    margin-left: 50px;
+    background: black;
+}
+.programs{
+    background: black;
+    width: 50%;
+}
+*/
+#navbar{
+    background: transparent;
+    border: none;
 }
