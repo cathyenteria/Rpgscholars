@@ -10098,8 +10098,85 @@ class-news{
     width: 50%;
 }
 */
-/* line 307, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 #navbar {
-  background: transparent;
+  padding: 5px;
+  background: #306CB8;
   border: none;
+}
+
+/* line 313, ../scss/style.scss */
+.navbar {
+  border: none;
+}
+
+/* line 316, ../scss/style.scss */
+.users-menu-mini {
+  padding: 3px;
+  margin-left: -5px;
+}
+
+/* line 320, ../scss/style.scss */
+.main-menu-mini {
+  margin-bottom: 22px;
+  padding: 5px;
+}
+
+/* line 324, ../scss/style.scss */
+#mini-panel-navbar_mini {
+  padding-top: 20px;
+}
+
+/* line 327, ../scss/style.scss */
+.main-meu-page {
+  width: 100%;
+}
+
+/* line 331, ../scss/style.scss */
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+/* line 339, ../scss/style.scss */
+.navbar-default .navbar-brand {
+  color: #E9E9E9;
+}
+
+/* line 342, ../scss/style.scss */
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 20px;
+  height: 50px;
+}
+
+/* line 350, ../scss/style.scss */
+.top {
+  background: orange;
+  width: 100%;
+}
+
+/* line 354, ../scss/style.scss */
+.content-page-wrap {
+  background: yellow;
+}
+
+/* line 357, ../scss/style.scss */
+body {
+  background: #efede4;
+}
+
+/* line 360, ../scss/style.scss */
+.row {
+  background: white;
+  padding: 10px;
+  padding-top: 15px;
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.4);
 }

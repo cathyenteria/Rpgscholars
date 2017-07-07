@@ -74,6 +74,7 @@
 ?>
 
 <div id="page-wrapper"><div id="page">
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -82,10 +83,12 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
+      
 
       <?php if (!empty($site_name)): ?>
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
+
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -96,7 +99,7 @@
         </button>
       <?php endif; ?>
     </div>
-
+<div class="navbar">
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
@@ -112,8 +115,10 @@
         </nav>
       </div>
     <?php endif; ?>
+    </div>
   </div>
 </header>
+</div>
 
 <div class="main-container <?php print $container_class; ?>">
 
@@ -125,8 +130,11 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
 
+
+  <div class="row">
+<div class="row-wrapper">
+  <div class="row-page">
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -162,10 +170,13 @@
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
+ </div>
+</div>
   </div>
 </div>
 
+
+<div class="footer-wrap">
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
@@ -173,8 +184,8 @@
 
     </div>
 </div>
-
 <?php endif; ?>
+
 
 
 

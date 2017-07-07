@@ -89,6 +89,7 @@ $mylight: #00CCFF;
 $nav: #0A9BDE;
 $dev: #D6EBFF;
 $light: #00CEF4;
+$nav-color:#306CB8;
 /**/
 
 
@@ -305,6 +306,60 @@ class-news{
 }
 */
 #navbar{
-    background: transparent;
-    border: none;
+    padding: 5px;
+    background:$nav-color;
+    border:none;
+}
+.navbar{
+    border:none;
+}
+.users-menu-mini{
+    padding: 3px;
+    margin-left: -5px;
+}
+.main-menu-mini{
+    margin-bottom: 22px;
+    padding: 5px;
+}
+#mini-panel-navbar_mini{
+   padding-top: 20px;
+}
+.main-meu-page{
+    width:100%;
+
+}
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.navbar-default .navbar-brand {
+    color: #E9E9E9;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-weight:bold;
+    font-size: 40px;
+    line-height: 20px;
+    height: 50px;
+}
+.top{
+    background: orange;
+width:100%;
+}
+.content-page-wrap{
+    background: yellow;
+}
+body{
+    background: #efede4;
+}
+.row{
+    background: white;
+    padding: 10px;
+    padding-top:15px;
+    box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.4);
 }
